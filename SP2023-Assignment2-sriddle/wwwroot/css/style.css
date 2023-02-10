@@ -1,2 +1,67 @@
 ﻿body {
+    background: url(../images/background1.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+#time, #searchResults {
+    display: none;
+}
+
+.main {
+    margin: 0 auto;
+    text-align: center;
+    align-items: center;
+
+    flex: 0 0 auto;
+    width: 45%;
+}
+
+fieldset {
+    padding: 10px 50px 25px;
+    border: 2px solid gray;
+    border-radius: 10px;
+    position: relative;
+    float: left;
+    text-align: center;
+    align-items: center;
+    margin: 0 auto;
+    opacity: 93%;
+}
+
+
+input {
+    margin: 50px 5px 12px 5px;
+    font-size: 25px;
+    border-radius: 5px;
+    border: 1px solid grey;
+    width: 60%;
+    height: 54px;
+}
+
+body {
+    margin-top: 230px;
+    height: inherit;
+    text-align: center;
+    align-items: center;
+    background-repeat: no-repeat;
+}
+
+#search-engine-name {
+    font-size: 80px;
+    font-size: 80px;
+    width: 80%;
+    padding: 60px 60px 60px 60px;
+}
+
+#search-button {
+    margin: 50px 5px 12px 5px;
+    height: 70px;   
+}
+
+#time-button, #lucky-button {
+    margin: 20px 5px 12px 5px;
+    width: 225px;
 }

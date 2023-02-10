@@ -3,14 +3,34 @@
 <html lang="en">
 
 <head>
-
-    <link rel="stylesheet" href="./style.css">
-
+    <title>Mr. Know-It-All</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js" integrity="sha384-Ft/vb48LwsAEtgltj7o+6vtS2esTU9PCpDqcXs4OCVQFZu5BqprHtUCZ4kjK+bpE" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.13.2/themes/pepper-grinder/jquery-ui.css" integrity="sha384-sqqDPqey9c5z9di0RN8pCagFkGsvQJ6zqdEbpRPzr26gnpplXNr8u4xnbzf1L9PA" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.13.2/jquery-ui.min.js" integrity="sha384-4D3G3GikQs6hLlLZGdz5wLFzuqE9v4yVGAcOH86y23JqBDPzj9viv0EqyfIa6YUL" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment-with-locales.min.js" integrity="sha384-njdhObnZl0+D6iv/pV3gfStZxeAHygRBLvZTIQvry5R4kubY+dt/yqABU+UcEWez" crossorigin="anonymous"></script>
 </head>
 
 <body>
+    <div class="main">
+        <fieldset class="ui-widget ui-widget-content ui-corner-all">
+            <div>
+                <label id="search-engine-name" class="ui-widget ui-corner-all formlabel page-slug-tooltip" title="Click me to change background.">Mr. Know-It-All</label>
+                <div id="form">
+                    <input id="query" type="text" placeholder="Enter search terms..." class="ui-button ui-corner-all ui-widget" />
+                    <button id="search-button" class="ui-button ui-corner-all ui-widget" value="Search">Search</button>
+                </div>
+            </div>
+            <div>
+                <button id="time-button" class="ui-button ui-corner-all ui-widget">See Local Time</button>
+                <button id="lucky-button" class="ui-button ui-corner-all ui-widget">I'm Feeling Lucky</button>
+            </div>
+        </fieldset>
+    </div>
+    <div id="searchResults"></div>
+    <div id="time"></div>
 
-    <script type="text/javascript" src="./script.js"></script>
+    <script type="text/javascript" src="./js/script.js"></script>
 
 </body>
 
