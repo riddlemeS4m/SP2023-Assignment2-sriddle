@@ -14,8 +14,6 @@ function apiSearch() {
         "mkt": "en-us"
     };
 
-    console.log(window.innerWidth)
-
     $.ajax({
         url: my_api_url + $.param(params),
         beforeSend: function (xhrObj) {
@@ -51,7 +49,6 @@ time_btn.onclick = () => {
     var datetime = moment()
     var formatted_time = datetime.format('hh:mm A')
     time_div.textContent = formatted_time;
-    /*time_div.style.display = "block"*/
     $('#time').dialog({
         width: 200,
         height: 100
