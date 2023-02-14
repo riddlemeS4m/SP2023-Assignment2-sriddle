@@ -23,6 +23,7 @@ function apiSearch() {
     })
         .done(function (data) {
             len = data.webPages.value.length;
+            let results = '';
             for (i = 0; i < len; i++) {
                 results += "<p><a href='" + data.webPages.value[i].url + "'>" + data.webPages.value[i].name + "</a>: " + data.webPages.value[i].snippet + "</p>";
             }
